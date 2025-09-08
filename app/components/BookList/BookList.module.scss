@@ -1,33 +1,68 @@
 .componentWrapper {
-  background: white;
-  padding: 25px;
-  border-radius: 25px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
 
   .header {
     display: flex;
+    flex-direction: column; // stack on mobile
+    align-items: flex-start;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
     font-weight: 500;
-    justify-content: space-between;
-    margin-bottom: 10px;
 
     .title {
       font-weight: 500;
+      font-size: 1.1rem;
+      color: #111;
     }
 
     input {
       border: none;
-      border-radius: 5px;
-      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      padding: 0.5rem 0.9rem;
       background-color: #f9f9f9;
-      width: 35%;
+      width: 100%; // full width on mobile
+      font-size: 0.9rem;
     }
   }
 
   .tableContainer {
+    overflow-x: auto; // safety for small screens
   }
 
   .tableFooterText {
-    font-size: 12px;
-    padding: 16px 0 0 0;
+    font-size: 0.8rem;
+    padding: 12px 0 0;
     text-align: center;
+    color: #666;
+  }
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .componentWrapper {
+    padding: 25px;
+    border-radius: 25px;
+
+    .header {
+      flex-direction: row; // side by side on larger screens
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .title {
+        font-size: 1.2rem;
+      }
+
+      input {
+        width: 35%; // shrink back on desktop
+        font-size: 0.95rem;
+      }
+    }
+
+    .tableFooterText {
+      font-size: 0.85rem;
+    }
   }
 }

@@ -1,15 +1,16 @@
 .footerWrapper {
-  margin-top: 2rem;
-  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
   text-align: center;
   background: #fff;
   border-top: 1px solid #eee;
-  font-size: 0.95rem;
+  font-size: 0.85rem; // mobile-friendly
   color: #555;
-  border-radius: 30px;
+  border-radius: 20px;
 
   p {
     margin: 0;
+    line-height: 1.5;
   }
 
   span a {
@@ -22,5 +23,15 @@
       color: #ff6f3c; // orange accent on hover
       text-decoration: underline;
     }
+  }
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .footerWrapper {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 0.95rem;
+    border-radius: 30px;
   }
 }

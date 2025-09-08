@@ -1,34 +1,35 @@
 .header {
   display: flex;
-  gap: 1.5rem;
   align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   background: #fff;
   border-bottom: 1px solid #eee;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  padding: 20px 64px;
+  padding: 12px 20px; // tighter on mobile
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  // color: #e75470; // pink accent
   background: linear-gradient(135deg, #ff4b6e, #ff6f3c);
-
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  white-space: nowrap;
 }
 
 .secondContainer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  width: 100%;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  flex: 1; // take remaining space
 }
 
 .title {
-  font-size: 1.2rem;
+  display: none; // hide on mobile to save space
+  font-size: 1rem;
   font-weight: 600;
   color: #111;
 }
@@ -37,9 +38,9 @@
   background: #e75470;
   border: none;
   outline: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  font-size: 0.95rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
   font-weight: 500;
   color: #fff;
   cursor: pointer;
@@ -47,5 +48,31 @@
 
   &:hover {
     background: #d74361;
+  }
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .header {
+    padding: 20px 64px;
+    gap: 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .secondContainer {
+    gap: 1.5rem;
+  }
+
+  .title {
+    display: block; // show title again
+    font-size: 1.2rem;
+  }
+
+  .ctaBtn button {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
   }
 }

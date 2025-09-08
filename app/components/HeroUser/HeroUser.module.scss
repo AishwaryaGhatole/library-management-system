@@ -1,16 +1,21 @@
 .heroUserWrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; // mobile-first stacked
+  gap: 1rem;
   background: #fff;
-  padding: 1.5rem 2rem;
+  padding: 1rem 1.2rem;
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  }
 }
 
 .userData {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #111;
 }
@@ -25,29 +30,53 @@
 .dateDetails {
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
-  color: #555;
+  align-items: flex-start;
+  gap: 0.3rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  align-items: flex-end;
-  @media (max-width: 768px) {
-    align-items: flex-start;
-  }
+  color: #555;
 }
 
 .currentDate {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #111;
 }
 
 .currentDay {
-  margin-top: 0.3rem;
   color: #777;
 }
 
 .currentTime {
-  margin-top: 0.3rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #ff4b6e;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .heroUserWrapper {
+    flex-direction: row; // side by side
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .userData {
+    font-size: 1.8rem;
+  }
+
+  .dateDetails {
+    align-items: flex-end;
+    font-size: 1rem;
+  }
+
+  .currentDate {
+    font-size: 1.1rem;
+  }
+
+  .currentTime {
+    font-size: 1.25rem;
+  }
 }

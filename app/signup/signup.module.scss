@@ -4,11 +4,12 @@
   align-items: center;
   min-height: 100vh;
   background: #f9f9f9;
+  padding: 1rem; // small padding for mobile
 }
 
 .card {
   background: #fff;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -84,5 +85,24 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+/* Tablet and up */
+@media (min-width: 600px) {
+  .card {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .form {
+    gap: 1.2rem;
+  }
+
+  .submitBtn {
+    font-size: 1.05rem;
   }
 }
