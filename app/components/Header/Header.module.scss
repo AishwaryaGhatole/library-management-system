@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 20px 64px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  // color: #e75470; // pink accent
+  background: linear-gradient(135deg, #ff4b6e, #ff6f3c);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.secondContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.ctaBtn button {
+  background: #e75470;
+  border: none;
+  outline: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: #d74361;
+  }
+}

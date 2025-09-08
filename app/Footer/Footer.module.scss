@@ -1,0 +1,26 @@
+.footerWrapper {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  background: #fff;
+  border-top: 1px solid #eee;
+  font-size: 0.95rem;
+  color: #555;
+  border-radius: 30px;
+
+  p {
+    margin: 0;
+  }
+
+  span a {
+    font-weight: 600;
+    color: #ff4b6e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #ff6f3c; // orange accent on hover
+      text-decoration: underline;
+    }
+  }
+}

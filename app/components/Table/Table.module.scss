@@ -1,0 +1,31 @@
+.tableContainer{
+  padding: 20px 0px;
+  width: 100%;
+  height: 360px;
+  overflow-y: scroll;
+
+  .table{
+    width: 100%;
+
+    .tableHead{
+
+      .tableTitle{
+        text-align: start;
+        color: #636363;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0 0 16px 0;
+        border-bottom: 2px solid #e1e1e1;
+      }
+    }
+    
+    .tableBody{
+      td{
+        font-size: 12px;
+        font-weight: 500;
+        padding: 16px 0 16px 0;
+        border-bottom: 2px solid #e1e1e1;
+      }
+    }
+  }
+}

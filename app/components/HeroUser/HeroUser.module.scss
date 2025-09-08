@@ -1,0 +1,53 @@
+.heroUserWrapper {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.userData {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.userName {
+  background: linear-gradient(135deg, #ff4b6e, #ff6f3c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dateDetails {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: #555;
+  font-weight: 500;
+  align-items: flex-end;
+  @media (max-width: 768px) {
+    align-items: flex-start;
+  }
+}
+
+.currentDate {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.currentDay {
+  margin-top: 0.3rem;
+  color: #777;
+}
+
+.currentTime {
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ff4b6e;
+}

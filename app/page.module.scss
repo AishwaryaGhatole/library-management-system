@@ -1,0 +1,36 @@
+.mainContainer {
+  background-color: #f9f9f9;
+  padding: 20px 60px;
+
+  .tablesContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-direction: row;
+    margin-bottom: 60px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    .userContainer {
+      margin-bottom: 60px;
+    }
+
+    .usersContainer {
+      width: 100%;
+    }
+    .booksContainer {
+      width: 100%;
+    }
+  }
+
+  .widgetsContainer {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 60px;
+    flex-direction: row;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+}

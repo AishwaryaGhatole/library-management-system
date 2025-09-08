@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: #f9f9f9;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #ff4b6e, #ff6f3c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  label {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 0.6rem;
+    outline: none;
+    transition: border 0.2s ease;
+
+    &:focus {
+      border-color: #ff4b6e;
+    }
+  }
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.submitBtn {
+  background: linear-gradient(135deg, #ff4b6e, #ff6f3c);
+  border: none;
+  padding: 0.9rem;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+}
+
+.forgotPassword {
+  margin: 0.5rem 0 1rem;
+  text-align: right;
+
+  a {
+    font-size: 0.9rem;
+    color: #ff4b6e;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.signupLink {
+  margin-top: 1.2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+
+  .signupText {
+    font-weight: 600;
+    color: #ff4b6e;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
