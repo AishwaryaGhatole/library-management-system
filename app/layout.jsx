@@ -13,7 +13,7 @@ export const metadata = {
   description:
     "A web-based Library Management System that helps manage books, users, and borrowing records efficiently. Features include adding/removing books, tracking issued and returned books, and generating reports for easy library administration.",
   icons: {
-    icon: "/book-icon.svg",
+    icon: "/book.svg",
   },
 };
 
